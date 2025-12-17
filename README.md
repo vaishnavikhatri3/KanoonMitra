@@ -200,10 +200,11 @@ The `generate_final_response(user_query)` function integrates the entire pipelin
 
 ## ▶️ Running the Application Locally
 
+```text
 pip install -r requirements.txt  
 streamlit run app.py  
+```
 
----
 
 ## 👩‍💻 Project By
 
