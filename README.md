@@ -52,21 +52,25 @@ Streamlit UI
 
 ## 📁 Project Structure
 
+```text
 KanoonMitra/
+│
 ├── app.py
 ├── model.py
+│
 ├── data/
 │   ├── bns_sections.csv
 │   ├── BNStoIPC.csv
 │   └── ipc_sections.csv
+│
 ├── embeddings/
 │   ├── bns.pkl
 │   └── faiss_index.bin
+│
 ├── .env
 ├── .gitignore
 ├── requirements.txt
 └── README.md
----
 
 ## 🛠️ Technology Stack
 
