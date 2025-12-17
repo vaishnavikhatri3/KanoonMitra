@@ -209,5 +209,5 @@ streamlit run app.py
 ## 👩‍💻 Project By
 
 Vaishnavi Khatri  
-B.Tech / M.Tech (IT)  
-Indian Institute of Professional Studies (IIPS), DAVV
+Integrated M.Tech (IT)  
+International Institute of Professional Studies (IIPS), DAVV
