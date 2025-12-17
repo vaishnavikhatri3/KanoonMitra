@@ -50,16 +50,16 @@ Streamlit UI
 
 ## 📁 Project Structure
 KanoonMitra/
-├── app.py # Streamlit frontend
-├── model.py # Core backend logic
+├── app.py
+├── model.py
 ├── data/
-│ ├── bns_sections.csv
-│ ├── BNStoIPC.csv
-│ └── ipc_sections.csv
+│   ├── bns_sections.csv
+│   ├── BNStoIPC.csv
+│   └── ipc_sections.csv
 ├── embeddings/
-│ ├── bns.pkl
-│ └── faiss_index.bin
-├── .env # Environment variables (ignored)
+│   ├── bns.pkl
+│   └── faiss_index.bin
+├── .env
 ├── .gitignore
 ├── requirements.txt
 └── README.md
@@ -193,11 +193,11 @@ The `generate_final_response(user_query)` function integrates the entire pipelin
 pip install -r requirements.txt
 streamlit run app.py
 
-👩‍💻 Project By
+## 👩‍💻 Project By
 
-Vaishnavi Khatri
-B.Tech / M.Tech (IT)
-Indian Institute of Professional Studies (IIPS), DAVV
+Vaishnavi Khatri  
+B.Tech / M.Tech (IT)  
+Indian Institute of Professional Studies (IIPS), DAVV  
 
 
 
