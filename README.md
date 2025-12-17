@@ -32,23 +32,26 @@ The application combines **Machine Learning**, **Semantic Search**, and **Large 
 
 ---
 
-User Query
-↓
-Sentence Transformer (Embeddings)
-↓
-FAISS Vector Similarity Search
-↓
-Relevant BNS Sections
-↓
-Large Language Model (Gemini / Gemma)
-↓
-Legal Summary + Advice
-↓
-Streamlit UI
+## 🧠 System Architecture
+
+User Query  
+↓  
+Sentence Transformer (Embeddings)  
+↓  
+FAISS Vector Similarity Search  
+↓  
+Relevant BNS Sections  
+↓  
+Large Language Model (Gemini / Gemma)  
+↓  
+Legal Summary + Advice  
+↓  
+Streamlit UI  
 
 ---
 
 ## 📁 Project Structure
+
 KanoonMitra/
 ├── app.py
 ├── model.py
@@ -64,40 +67,39 @@ KanoonMitra/
 ├── requirements.txt
 └── README.md
 
-
 ---
 
 ## 🛠️ Technology Stack
 
 ### Frontend
-- **Streamlit** – Interactive web interface
+- Streamlit – Interactive web interface
 
 ### Machine Learning & NLP
-- **sentence-transformers** – Semantic text embeddings  
-- **Model:** `all-MiniLM-L6-v2`
+- sentence-transformers – Semantic text embeddings  
+- Model: all-MiniLM-L6-v2
 
 ### Vector Search
-- **FAISS** – Fast similarity search on embeddings
+- FAISS – Fast similarity search on embeddings
 
 ### Data Processing
-- **pandas** – CSV and Pickle data handling  
-- **numpy** – Numerical operations  
+- pandas – CSV and Pickle data handling  
+- numpy – Numerical operations  
 
 ### Web Scraping
-- **requests** – HTTP requests  
-- **beautifulsoup4** – Case law extraction  
+- requests – HTTP requests  
+- beautifulsoup4 – Case law extraction  
 
 ### Large Language Models
-- **google.genai**
-  - Gemini (when quota/billing is enabled)
+- google.genai  
+  - Gemini (when quota/billing is enabled)  
   - Gemma (open-source fallback)
 
 ### Environment Management
-- **python-dotenv** – Secure API key loading
+- python-dotenv – Secure API key loading
 
 ---
 
-## 🧠 Backend Logic (`model.py`)
+## 🧠 Backend Logic (model.py)
 
 The `model.py` file is the **core intelligence layer** of the application.  
 It performs semantic search, legal mapping, case tracking, and AI-based text generation.
@@ -117,24 +119,26 @@ This adds **real-world judicial context** and helps users understand how laws ar
 - Enables secure communication with Large Language Models for text generation
 
 ### 2️⃣ Dataset Loading
+
 Three main datasets are used:
 
-**a) `bns.pkl`**
+**a) bns.pkl**
 - Contains Bharatiya Nyaya Sanhita sections  
 - Includes section number, title, and description  
 - Acts as the primary legal knowledge base  
 
-**b) `faiss_index.bin`**
+**b) faiss_index.bin**
 - FAISS vector index built from BNS embeddings  
 - Enables fast semantic similarity search  
 
-**c) `BNStoIPC.csv`**
+**c) BNStoIPC.csv**
 - Maps BNS sections to equivalent IPC sections  
 - Includes IPC descriptions for reference  
 
 ---
 
 ### 3️⃣ Semantic Search Using ML
+
 Legal problems are expressed in **natural language**, not exact legal terms.  
 Semantic embeddings ensure meaning-based search instead of keyword matching.
 
@@ -142,8 +146,8 @@ Semantic embeddings ensure meaning-based search instead of keyword matching.
 
 ### 4️⃣ Legal Mapping & Case Tracking
 
-- **IPC Mapping:** Maps retrieved BNS sections to IPC equivalents  
-- **Case Reference Fetching:** Scrapes Indian Kanoon for related judgments  
+- IPC Mapping: Maps retrieved BNS sections to IPC equivalents  
+- Case Reference Fetching: Scrapes Indian Kanoon for related judgments  
 
 This provides **legal continuity and real-world context**.
 
@@ -153,13 +157,13 @@ This provides **legal continuity and real-world context**.
 
 Two separate prompts are used:
 
-- **Legal Summary**
-  - Explains the legal issue in plain English  
-  - Summarizes relevant BNS sections  
+**Legal Summary**
+- Explains the legal issue in plain English  
+- Summarizes relevant BNS sections  
 
-- **Legal Advice**
-  - Provides actionable steps (FIR, police, magistrate, etc.)  
-  - Keeps advice clear and non-technical  
+**Legal Advice**
+- Provides actionable steps (FIR, police, magistrate, etc.)  
+- Keeps advice clear and non-technical  
 
 This separation ensures clarity and better user understanding.
 
@@ -178,27 +182,29 @@ The `generate_final_response(user_query)` function integrates the entire pipelin
 - Generates summary and advice  
 - Returns structured response to the UI  
 
-**Returned Output:**
-```json
+---
+
+## 📤 Returned Output
+
 {
   "summary": "...",
   "advice": "...",
   "ipc_mapping": "...",
   "bns_descriptions": "...",
   "case_links": "..."
-} 
+}
+
 ---
 
-▶️ Running the Application Locally
-pip install -r requirements.txt
-streamlit run app.py
+## ▶️ Running the Application Locally
+
+pip install -r requirements.txt  
+streamlit run app.py  
+
+---
 
 ## 👩‍💻 Project By
 
 Vaishnavi Khatri  
 B.Tech / M.Tech (IT)  
-Indian Institute of Professional Studies (IIPS), DAVV  
-
-
-
-
+Indian Institute of Professional Studies (IIPS), DAVV
