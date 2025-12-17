@@ -186,7 +186,8 @@ The `generate_final_response(user_query)` function integrates the entire pipelin
   "ipc_mapping": "...",
   "bns_descriptions": "...",
   "case_links": "..."
-}
+} 
+---
 
 ▶️ Running the Application Locally
 pip install -r requirements.txt
@@ -199,5 +200,5 @@ B.Tech / M.Tech (IT)
 Indian Institute of Professional Studies (IIPS), DAVV
 
 
-## 🧠 System Architecture
+
 
