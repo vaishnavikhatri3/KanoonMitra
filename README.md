@@ -71,7 +71,7 @@ KanoonMitra/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
 ## 🛠️ Technology Stack
 
 ### Frontend
@@ -188,7 +188,7 @@ The `generate_final_response(user_query)` function integrates the entire pipelin
 ---
 
 ## 📤 Returned Output
-
+```text
 {
   "summary": "...",
   "advice": "...",
@@ -196,7 +196,7 @@ The `generate_final_response(user_query)` function integrates the entire pipelin
   "bns_descriptions": "...",
   "case_links": "..."
 }
----
+```
 
 ## ▶️ Running the Application Locally
 
