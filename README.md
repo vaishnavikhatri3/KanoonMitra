@@ -66,7 +66,6 @@ KanoonMitra/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
 ---
 
 ## 🛠️ Technology Stack
@@ -193,7 +192,6 @@ The `generate_final_response(user_query)` function integrates the entire pipelin
   "bns_descriptions": "...",
   "case_links": "..."
 }
-
 ---
 
 ## ▶️ Running the Application Locally
